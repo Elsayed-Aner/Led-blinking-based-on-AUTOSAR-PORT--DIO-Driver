@@ -1,0 +1,517 @@
+Archive member included because of file (symbol)
+
+c:/program files/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                              c:/program files/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o (exit)
+c:/program files/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                              ./Dio_PBcfg.o (__do_copy_data)
+c:/program files/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                              ./App.o (__do_clear_bss)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD c:/program files/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o
+LOAD ./App.o
+LOAD ./Button.o
+LOAD ./Det.o
+LOAD ./Dio.o
+LOAD ./Dio_PBcfg.o
+LOAD ./Gpt.o
+LOAD ./Led.o
+LOAD ./Os.o
+LOAD ./Port.o
+LOAD ./Port_PBcfg.o
+LOAD ./Project.o
+LOAD c:/program files/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+LOAD c:/program files/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a
+LOAD c:/program files/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000      0xff2
+ *(.vectors)
+ .vectors       0x00000000       0x54 c:/program files/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+                0x00000054                . = ALIGN (0x2)
+                0x00000054                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000054        0x0 linker stubs
+ *(.trampolines*)
+                0x00000054                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000054                __ctors_start = .
+ *(.ctors)
+                0x00000054                __ctors_end = .
+                0x00000054                __dtors_start = .
+ *(.dtors)
+                0x00000054                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000054        0x0 c:/program files/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o
+                0x00000054                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000054        0xc c:/program files/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000060       0x16 c:/program files/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                0x00000060                __do_copy_data
+ .init4         0x00000076       0x10 c:/program files/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x00000076                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000086        0x8 c:/program files/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o
+ *(.init9)
+ *(.text)
+ .text          0x0000008e        0x4 c:/program files/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o
+                0x0000008e                __vector_1
+                0x0000008e                __vector_12
+                0x0000008e                __bad_interrupt
+                0x0000008e                __vector_6
+                0x0000008e                __vector_3
+                0x0000008e                __vector_11
+                0x0000008e                __vector_13
+                0x0000008e                __vector_17
+                0x0000008e                __vector_7
+                0x0000008e                __vector_5
+                0x0000008e                __vector_4
+                0x0000008e                __vector_9
+                0x0000008e                __vector_2
+                0x0000008e                __vector_15
+                0x0000008e                __vector_8
+                0x0000008e                __vector_14
+                0x0000008e                __vector_10
+                0x0000008e                __vector_16
+                0x0000008e                __vector_18
+                0x0000008e                __vector_20
+ .text          0x00000092        0x0 ./App.o
+ .text          0x00000092        0x0 ./Button.o
+ .text          0x00000092        0x0 ./Det.o
+ .text          0x00000092        0x0 ./Dio.o
+ .text          0x00000092        0x0 ./Dio_PBcfg.o
+ .text          0x00000092        0x0 ./Gpt.o
+ .text          0x00000092        0x0 ./Led.o
+ .text          0x00000092        0x0 ./Os.o
+ .text          0x00000092        0x0 ./Port.o
+ .text          0x00000092        0x0 ./Port_PBcfg.o
+ .text          0x00000092        0x0 ./Project.o
+ .text          0x00000092        0x0 c:/program files/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text          0x00000092        0x0 c:/program files/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text          0x00000092        0x0 c:/program files/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x00000092                . = ALIGN (0x2)
+ *(.text.*)
+ .text.Init_Task
+                0x00000092       0x2c ./App.o
+                0x00000092                Init_Task
+ .text.Button_Task
+                0x000000be       0x12 ./App.o
+                0x000000be                Button_Task
+ .text.Led_Task
+                0x000000d0       0x12 ./App.o
+                0x000000d0                Led_Task
+ .text.App_Task
+                0x000000e2       0x32 ./App.o
+                0x000000e2                App_Task
+ .text.BUTTON_getState
+                0x00000114       0x12 ./Button.o
+                0x00000114                BUTTON_getState
+ .text.BUTTON_refreshState
+                0x00000126       0x6a ./Button.o
+                0x00000126                BUTTON_refreshState
+ .text.Det_ReportError
+                0x00000190       0x1a ./Det.o
+                0x00000190                Det_ReportError
+ .text.Dio_Init
+                0x000001aa       0x42 ./Dio.o
+                0x000001aa                Dio_Init
+ .text.Dio_WriteChannel
+                0x000001ec      0x172 ./Dio.o
+                0x000001ec                Dio_WriteChannel
+ .text.Dio_ReadChannel
+                0x0000035e      0x134 ./Dio.o
+                0x0000035e                Dio_ReadChannel
+ .text.Dio_FlipChannel
+                0x00000492      0x1d6 ./Dio.o
+                0x00000492                Dio_FlipChannel
+ .text.Timer0_start
+                0x00000668       0x38 ./Gpt.o
+                0x00000668                Timer0_start
+ .text.Timer0_setCallBack
+                0x000006a0       0x24 ./Gpt.o
+                0x000006a0                Timer0_setCallBack
+ .text.__vector_19
+                0x000006c4       0x66 ./Gpt.o
+                0x000006c4                __vector_19
+ .text.LED_setOn
+                0x0000072a       0x16 ./Led.o
+                0x0000072a                LED_setOn
+ .text.LED_setOff
+                0x00000740       0x16 ./Led.o
+                0x00000740                LED_setOff
+ .text.LED_refreshOutput
+                0x00000756       0x22 ./Led.o
+                0x00000756                LED_refreshOutput
+ .text.LED_toggle
+                0x00000778       0x1a ./Led.o
+                0x00000778                LED_toggle
+ .text.Os_start
+                0x00000792       0x24 ./Os.o
+                0x00000792                Os_start
+ .text.Os_newTimerTick
+                0x000007b6       0x1e ./Os.o
+                0x000007b6                Os_newTimerTick
+ .text.Os_scheduler
+                0x000007d4       0xa4 ./Os.o
+                0x000007d4                Os_scheduler
+ .text.Port_Init
+                0x00000878      0x3ca ./Port.o
+                0x00000878                Port_Init
+ .text.Port_SetPinDirection
+                0x00000c42      0x1c2 ./Port.o
+                0x00000c42                Port_SetPinDirection
+ .text.Port_RefreshPortDirection
+                0x00000e04       0xd8 ./Port.o
+                0x00000e04                Port_RefreshPortDirection
+ .text.Port_GetVersionInfo
+                0x00000edc       0x5c ./Port.o
+                0x00000edc                Port_GetVersionInfo
+ .text.Port_SetPinMode
+                0x00000f38       0xa0 ./Port.o
+                0x00000f38                Port_SetPinMode
+ .text.main     0x00000fd8       0x16 ./Project.o
+                0x00000fd8                main
+ .text.libgcc   0x00000fee        0x0 c:/program files/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00000fee        0x0 c:/program files/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00000fee        0x0 c:/program files/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x00000fee                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00000fee        0x0 c:/program files/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x00000fee                exit
+                0x00000fee                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00000fee        0x4 c:/program files/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x00000ff2                _etext = .
+
+.data           0x00800060      0x104 load address 0x00000ff2
+                0x00800060                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800060        0x0 c:/program files/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o
+ .data          0x00800060        0x0 ./App.o
+ .data          0x00800060        0x0 ./Button.o
+ .data          0x00800060        0x0 ./Det.o
+ .data          0x00800060        0x0 ./Dio.o
+ .data          0x00800060        0x0 ./Dio_PBcfg.o
+ .data          0x00800060        0x0 ./Gpt.o
+ .data          0x00800060        0x0 ./Led.o
+ .data          0x00800060        0x0 ./Os.o
+ .data          0x00800060        0x0 ./Port.o
+ .data          0x00800060        0x0 ./Port_PBcfg.o
+ .data          0x00800060        0x0 ./Project.o
+ .data          0x00800060        0x0 c:/program files/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .data          0x00800060        0x0 c:/program files/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .data          0x00800060        0x0 c:/program files/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ .rodata.Dio_Configuration
+                0x00800060        0x4 ./Dio_PBcfg.o
+                0x00800060                Dio_Configuration
+ .rodata.Port_Configuration
+                0x00800064      0x100 ./Port_PBcfg.o
+                0x00800064                Port_Configuration
+ *(.gnu.linkonce.d*)
+                0x00800164                . = ALIGN (0x2)
+                0x00800164                _edata = .
+                0x00800164                PROVIDE (__data_end, .)
+
+.bss            0x00800164        0xf
+                0x00800164                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x00800164        0x0 c:/program files/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o
+ .bss           0x00800164        0x0 ./App.o
+ .bss           0x00800164        0x0 ./Button.o
+ .bss           0x00800164        0x0 ./Det.o
+ .bss           0x00800164        0x0 ./Dio.o
+ .bss           0x00800164        0x0 ./Dio_PBcfg.o
+ .bss           0x00800164        0x0 ./Gpt.o
+ .bss           0x00800164        0x0 ./Led.o
+ .bss           0x00800164        0x0 ./Os.o
+ .bss           0x00800164        0x0 ./Port.o
+ .bss           0x00800164        0x0 ./Port_PBcfg.o
+ .bss           0x00800164        0x0 ./Project.o
+ .bss           0x00800164        0x0 c:/program files/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .bss           0x00800164        0x0 c:/program files/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .bss           0x00800164        0x0 c:/program files/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ *(.bss*)
+ .bss.button_current_state.1376
+                0x00800164        0x1 ./App.o
+ .bss.button_previous_state.1375
+                0x00800165        0x1 ./App.o
+ .bss.g_Pressed_Count
+                0x00800166        0x1 ./Button.o
+ .bss.g_Released_Count
+                0x00800167        0x1 ./Button.o
+ .bss.g_button_state
+                0x00800168        0x1 ./Button.o
+ .bss.Dio_PortChannels
+                0x00800169        0x2 ./Dio.o
+ .bss.Dio_Status
+                0x0080016b        0x1 ./Dio.o
+ .bss.g_Timer0_Call_Back_Ptr
+                0x0080016c        0x2 ./Gpt.o
+ .bss.g_Time_Tick_Count
+                0x0080016e        0x1 ./Os.o
+ .bss.g_New_Time_Tick_Flag
+                0x0080016f        0x1 ./Os.o
+ .bss.Port_Pin_Config
+                0x00800170        0x2 ./Port.o
+ .bss.Port_Status
+                0x00800172        0x1 ./Port.o
+ *(COMMON)
+                0x00800173                PROVIDE (__bss_end, .)
+                0x00000ff2                __data_load_start = LOADADDR (.data)
+                0x000010f6                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00800173        0x0
+                0x00800173                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x00800173                PROVIDE (__noinit_end, .)
+                0x00800173                _end = .
+                0x00800173                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab           0x00000000     0x21c0
+ *(.stab)
+ .stab          0x00000000      0x5e8 ./App.o
+ .stab          0x000005e8      0x24c ./Button.o
+                                0x3cc (size before relaxing)
+ .stab          0x00000834      0x150 ./Det.o
+                                0x210 (size before relaxing)
+ .stab          0x00000984      0x5b8 ./Dio.o
+                                0x6d8 (size before relaxing)
+ .stab          0x00000f3c      0x108 ./Dio_PBcfg.o
+                                0x228 (size before relaxing)
+ .stab          0x00001044      0x234 ./Gpt.o
+                                0x4b0 (size before relaxing)
+ .stab          0x00001278      0x2dc ./Led.o
+                                0x39c (size before relaxing)
+ .stab          0x00001554      0x2d0 ./Os.o
+                                0x558 (size before relaxing)
+ .stab          0x00001824      0x744 ./Port.o
+                                0x864 (size before relaxing)
+ .stab          0x00001f68      0x108 ./Port_PBcfg.o
+                                0x228 (size before relaxing)
+ .stab          0x00002070      0x150 ./Project.o
+                                0x21c (size before relaxing)
+
+.stabstr        0x00000000     0x1432
+ *(.stabstr)
+ .stabstr       0x00000000     0x1432 ./App.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(SW_Layered_Project.elf elf32-avr)
+LOAD linker stubs
