@@ -51,19 +51,24 @@
 <!-- AUTOSAR DRIVER -->
 # AUTOSAR DRIVER
 
-1. [System API](System-API)
-2. [Features](Features)
-3. [PORT Driver](PORT-Driver)
-4. [DIO Driver](DIO-Driver)
+- [System API](#system-api)
+- [Features](#features)
+- [PORT Driver](#port-driver)
+- [DIO Driver](#dio-driver)
+- [Functions](#functions)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+- [Acknowledgements](#acknowledgements)
 
 
 <!-- System API -->
 ### System API
-`client_add`
-`client_delet`
-`list_d`
-`clear_c`
-`logout`
+- `client_add`
+- `client_delet`
+- `list_d`
+- `clear_c`
+- `logout`
 
 <!-- Features -->
 ### Features
@@ -71,6 +76,18 @@
 - account (username & password) protected.
 - store data into encrypted files.
 - multiple command option.
+
+<!-- PORT Driver -->
+## PORT Driver
+
+<!-- DIO Driver -->
+## DIO Driver
+
+
+<!-- Functions -->
+## Functions
+
+Use this space to tell a little more about your project and how it can be used. Show additional screenshots, code samples, demos or link to other resources.
 
 
 <!-- Contributing -->
@@ -99,4 +116,3 @@ Use this section to mention useful resources and libraries that you have used in
 
  - [Alex Fosdick](https://www.coursera.org/instructor/~19507668)
  - [Quantum Leaps, LLC](https://www.youtube.com/@StateMachineCOM)
-
